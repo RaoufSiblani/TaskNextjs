@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": ".next"
+		},
+		{
+			"path": "comp"
+		},
+		{
+			"path": "nextjsTask"
+		},
+		{
+			"path": "node_modules"
+		},
+		{
+			"path": "pages"
+		},
+		{
+			"path": "public"
+		},
+		{
+			"path": "styles"
+		},
+		{
+			"path": "Task2"
+		}
+	]
+}
