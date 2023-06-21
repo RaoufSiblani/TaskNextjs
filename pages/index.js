@@ -15,6 +15,6 @@ export default function Home() {
       <Navbar />
       <Banner {...bannerData} />
       <Footer/>
-      </div
+      </div>
   )
 }
