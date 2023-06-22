@@ -15,7 +15,7 @@ const MenuItem = ({ image, title, price, description, onSelectItem, selected }) 
         <h4>{price}$</h4>
         <p>{description}</p>
         <label>
-          <input type="checkbox" checked={selected} onChange={handleCheckboxChange} /> Show/Hide Item
+          <input type="checkbox" checked={selected} onChange={handleCheckboxChange} /> add/remove Item
         </label>
       </div>
     </div>
