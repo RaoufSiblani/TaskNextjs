@@ -34,17 +34,17 @@ const Menu = () => {
     <div>
       <Navbar />
       <Banner {...bannerData} />
-      <div className="flex justify-center w-90">
-        {menuItems.map((menuItem, index) => (
-          <MenuItem
-            key={index}
-            image={menuItem.image}
-            title={menuItem.title}
-            price={menuItem.price}
-            description={menuItem.description}
-          />
-        ))}
-      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  {menuItems.map((menuItem, index) => (
+    <MenuItem
+      key={index}
+      image={menuItem.image}
+      title={menuItem.title}
+      price={menuItem.price}
+      description={menuItem.description}
+    />
+  ))}
+</div>
       <Footer />
     </div>
   );
