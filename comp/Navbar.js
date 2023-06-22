@@ -9,17 +9,17 @@ const Navbar = () => {
       <img src="/images/logo.png" alt="My Image" class="w-20 h-20 p-3" />
       <ul className="flex items-center justify-center w-full list-none">
         <li>
-          <a href="/" className={router.pathname === '/' ? "block text-2xl sm:text-3xl lg:text-4xl text-[#F4992D] text-center p-3 px-5 sm:px-10 lg:px-20 no-underline font-bold" : "block text-2xl sm:text-3xl lg:text-4xl text-white text-center p-3 sm:p-1 lg:p-5 px-5 sm:px-10 lg:px-20 no-underline font-bold"}>
+          <a href="/" className={router.pathname === '/' ? "nav-item text-orange213" : "nav-item text-white"}>
             Home
           </a>
         </li>
         <li>
-          <a href="/menu" className={router.pathname === '/menu' ? "block text-2xl sm:text-3xl lg:text-4xl text-[#F4992D] text-center p-3 px-5 sm:px-10 lg:px-20 no-underline font-bold" : "block text-2xl sm:text-3xl lg:text-4xl text-white text-center p-3 sm:p-1 lg:p-5 px-5 sm:px-10 lg:px-20 no-underline font-bold"}>
+          <a href="/menu" className={router.pathname === '/menu' ? "nav-item text-orange213" : "nav-item text-white"}>
             Menu
           </a>
         </li>
         <li>
-          <a href="/contact" className={router.pathname === '/contact' ? "block text-2xl sm:text-3xl lg:text-4xl text-[#F4992D] text-center p-3 px-5 sm:px-10 lg:px-20 no-underline font-bold" : "block text-2xl sm:text-3xl lg:text-4xl text-white text-center p-3 sm:p-1 lg:p-5 px-5 sm:px-10 lg:px-20 no-underline font-bold"}>
+            <a href="/contact" className={router.pathname === '/contact' ? "nav-item text-orange213" : "nav-item text-white"}>
             contact
           </a>
         </li>
