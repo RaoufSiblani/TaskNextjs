@@ -7,7 +7,7 @@ import Order from '@/comp/order.js';
 
 const Menu = () => {
   const bannerData = {
-    imageSrc: '/images/ban3.jpg',
+    imageSrc: '/images/menu.png',
     overlayText: 'Menu',
   };
   const menuItems = [

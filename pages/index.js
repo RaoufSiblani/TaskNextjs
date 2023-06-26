@@ -1,19 +1,33 @@
 import { Inter } from 'next/font/google'
 import Navbar from '../comp/Navbar.js'
-import Banner from '@/comp/Banner.js';
 import Footer from '@/comp/Footer.js';
+import Carousel from '@/comp/Carousel.js';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const bannerData = {
-    imageSrc: '/images/ban1.jpg',
-    overlayText: 'Welcome',
-  };
+  const bannerData = [
+    {
+      imageSrc: '/images/carousel1.png',
+      overlayText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+      imageSrc: '/images/carousel2.png',
+      overlayText: 'Sed tincidunt facilisis ultrices. Nullam nec consequat nisi',
+    },
+    {
+      imageSrc: '/images/carousel3.png',
+      overlayText: 'Suspendisse tristique lacus ac nisl consequat, nec dignissim leo posuere',
+    },
+    {
+      imageSrc: '/images/carousel4.png',
+      overlayText: 'Morbi eget velit in massa tempor efficitur',
+    },
+  ];
   return (
     <div>
       <Navbar />
-      <Banner {...bannerData} />
+      <Carousel bannerData={bannerData} />
       <Footer/>
     </div>
   )
