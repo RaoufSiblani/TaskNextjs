@@ -31,6 +31,9 @@ const Carousel = ({ bannerData }) => {
 
   return (
     <div className="flex w-full relative">
+      <button className="prev-button" onClick={previousImage}>
+        &lt;
+      </button>
       <Swiper
         loop={true}
         autoplay={{
@@ -50,9 +53,7 @@ const Carousel = ({ bannerData }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className="prev-button" onClick={previousImage}>
-        &lt;
-      </button>
+      
       <button className="next-button" onClick={nextImage}>
         &gt;
       </button>
