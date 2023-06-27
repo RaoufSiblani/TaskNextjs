@@ -1,27 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 
 import Banner from './Banner';
-import SwiperCore, { Navigation } from 'swiper';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination]);
 
 const Carousel = ({ bannerData }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const swiperRef = useRef(null);
 
-  const previousImage = () => {
-    swiperRef.current.swiper.slidePrev();
-  };
-
-  const nextImage = () => {
-    swiperRef.current.swiper.slideNext();
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
-      nextImage();
+      swiperRef.current.swiper.slideNext();
     }, 5000);
 
     return () => {
@@ -31,9 +23,6 @@ const Carousel = ({ bannerData }) => {
 
   return (
     <div className="flex w-full relative">
-      <button className="prev-button" onClick={previousImage}>
-        &lt;
-      </button>
       <Swiper
         loop={true}
         autoplay={{
@@ -41,11 +30,11 @@ const Carousel = ({ bannerData }) => {
           disableOnInteraction: false,
         }}
         onSlideChange={(swiper) => setCurrentImageIndex(swiper.activeIndex)}
-        navigation={{
-          prevEl: '.prev-button',
-          nextEl: '.next-button',
+        navigation
+        pagination={{ clickable: true }}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
         }}
-        ref={swiperRef}
       >
         {bannerData.map((banner, index) => (
           <SwiperSlide key={index}>
@@ -53,10 +42,6 @@ const Carousel = ({ bannerData }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      
-      <button className="next-button" onClick={nextImage}>
-        &gt;
-      </button>
     </div>
   );
 };

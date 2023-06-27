@@ -7,3 +7,14 @@ body {
  margin: 0;
  padding: 0;
 }
+.swiper-button-prev,
+.swiper-button-next 
+{
+    @apply text-black text-4xl hover:text-orange213;
+}
+
+@layer utilities {
+    .swiper-pagination-bullet {
+      background-color: #ff9100;
+    }
+  }
