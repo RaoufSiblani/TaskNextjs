@@ -8,13 +8,20 @@ body {
  padding: 0;
 }
 .swiper-button-prev,
-.swiper-button-next 
-{
-    @apply text-black text-4xl hover:text-orange213;
+.swiper-button-next {
+  color: black !important;
+  font-size: 4rem !important;
 }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #ff9100 !important;
+}
+
 
 @layer utilities {
     .swiper-pagination-bullet {
-      background-color: #ff9100;
+      color: #ff9100 !important;
+      background-color: #ff9100 !important;
     }
   }
