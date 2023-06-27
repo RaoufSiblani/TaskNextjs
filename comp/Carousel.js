@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 
 import Banner from './Banner';
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const Carousel = ({ bannerData }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -13,7 +13,9 @@ const Carousel = ({ bannerData }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      swiperRef.current.swiper.slideNext();
+      if (swiperRef.current && swiperRef.current.swiper) {
+        swiperRef.current.swiper.slideNext();
+      }
     }, 5000);
 
     return () => {
@@ -47,3 +49,4 @@ const Carousel = ({ bannerData }) => {
 };
 
 export default Carousel;
+
