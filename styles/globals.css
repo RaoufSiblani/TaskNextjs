@@ -10,7 +10,6 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   color: black !important;
-  font-size: 4rem !important;
 }
 
 .swiper-button-prev:hover,
@@ -19,9 +18,9 @@ body {
 }
 
 
-@layer utilities {
-    .swiper-pagination-bullet {
+
+.swiper-pagination-bullet-active {
       color: #ff9100 !important;
       background-color: #ff9100 !important;
-    }
-  }
+ }
+  
