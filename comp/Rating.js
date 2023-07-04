@@ -65,7 +65,7 @@ const Rating = () => {
           value={tempComment}
           onChange={handleCommentChange}
           placeholder="Enter your comment"
-          className="block border-0 outline-none w-4/5 text-18 mt-5 text-white text-center bg-opacity-20 bg-black p-10 rounded-3 placeholder-orange213 placeholder-center"
+          className="block border outline-none w-4/5 text-18 mt-5 text-center border-gray-300 rounded-md p-10 rounded-3 placeholder-orange213 placeholder-center"
         />
         <button
           type="submit"

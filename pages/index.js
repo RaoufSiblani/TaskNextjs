@@ -2,7 +2,6 @@ import Navbar from '../comp/Navbar.js';
 import Footer from '@/comp/Footer.js';
 import Carousel from '@/comp/Carousel.js';
 import Accordion from '@/comp/Accordion.js'; 
-import Example from '@/comp/Acc+.js';
 
 export default function Home() {
   const bannerData = [
@@ -47,7 +46,6 @@ export default function Home() {
       <Navbar />
       <Carousel bannerData={bannerData} />
       <Accordion accordionData={accordionData} />
-      <Example/>
       <Footer />
     </div>
   );
