@@ -1,15 +1,15 @@
 const Order = ({ image, title, price }) => {
-    return (
-      <tr className="w-95">
-        <td className="flex justify-center items-center">
-          <img src={image} alt="Food" className="w-24 h-24" />
-        </td>
-        <td className="text-center">{title}</td>
-        <td className="text-center">{price}$</td>
-      </tr>
-      
-    );
-  };
-  
-  export default Order;
+  return (
+    <div className="grid grid-cols-3 gap-4 items-center w-95">
+      <div className="flex justify-center items-center">
+        <img src={image} alt="Food" className="w-24 h-24" />
+      </div>
+      <div className="text-center">{title}</div>
+      <div className="text-center">{price}$</div>
+    </div>
+  );
+};
+
+export default Order;
+
   

@@ -64,9 +64,6 @@ const Menu = () => {
       <div>
         <p className="text-orange213 text-2xl text-left underline font-bold pl-1">Your order:</p>
       </div>
-      <div className="mx-auto w-90">
-        <table className="w-full">
-          <tbody>
             {selectedItems.map((item, index) => (
               <Order
                 key={index}
@@ -75,9 +72,6 @@ const Menu = () => {
                 price={item.price}
               />
             ))}
-          </tbody>
-        </table>
-      </div>
       <Footer />
     </div>
   );

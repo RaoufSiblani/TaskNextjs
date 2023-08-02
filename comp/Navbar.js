@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="2xl:container 2xl:mx-auto mb-10">
       <ul className="flex items-center justify-center w-full list-none">
         <li>
-        <a href="/"><img src="/images/logo.png" className=" h-10 p-2"alt="My Image" /></a>
+        <a href="/"><img src="/images/logo.png" className=" h-20 py-auto px-3"alt="My Image" /></a>
         </li>
         <li>
           <a

@@ -2,8 +2,10 @@ import React from 'react';
 
 const Reviews = ({ rating, comment }) => {
   return (
+
     <div className="flex justify-center">
       <div className="w-4/5 bg-black bg-opacity-20">
+  
         <p>Name</p>
         <div className="items-center flex">
         <img src="/images/Mpfp.png" alt="Review Image" className="p-1 relative" />

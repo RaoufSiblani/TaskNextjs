@@ -76,10 +76,8 @@ const Rating = () => {
       </form>
       <div className="mt-5">
   {errorMessage && <p className="text-red-500 ml-5 mb-2 text-center">{errorMessage}</p>}
-  <h2 className="text-left ml-5 font-sans font-bold text-orange213 text-2xl underline">Reviews:</h2>
   {submitted && <Reviews rating={rating} comment={comment} />}
 </div>
-
     </div>
   );
 };

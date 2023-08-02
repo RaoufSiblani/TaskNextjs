@@ -26,7 +26,7 @@ const MyInfo = () => {
       <hr className="border-t-2 border-orange213" />
       <form className="relative items-center flex flex-col" onSubmit={handleSubmit}>
         <div className="mt-5">
-          <label className="text-left ml-5 font-sans font-bold text-orange213 text-lg">Name:</label>
+          <label className="text-left mx-5  font-sans font-bold text-orange213 text-lg">Name:</label>
           <input
             type="text"
             value={name}
@@ -35,7 +35,7 @@ const MyInfo = () => {
           />
         </div>
         <div className="mt-5">
-          <label className="text-left ml-5 font-sans font-bold text-orange213 text-lg">Email:</label>
+          <label className="text-left mx-5 font-sans font-bold text-orange213 text-lg">Email:</label>
           <input
             type="email"
             value={email}
@@ -44,7 +44,7 @@ const MyInfo = () => {
           />
         </div>
         <div className="mt-5">
-          <label className="text-left ml-5 font-sans font-bold text-orange213 text-lg">Country:</label>
+          <label className="text-left ml-5 mr-10 font-sans font-bold text-orange213 text-lg">Country:</label>
           <select
             value={country}
             onChange={(e) => setCountry(e.target.value)}
