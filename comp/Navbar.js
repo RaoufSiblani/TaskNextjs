@@ -5,9 +5,12 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-black flex items-center mb-10">
-      <img src="/images/logo.png" alt="My Image" className="w-20 h-20 p-3" />
+    <nav className="bg-black flex items-center ">
+      <div className="2xl:container 2xl:mx-auto mb-10">
       <ul className="flex items-center justify-center w-full list-none">
+        <li>
+        <a href="/"><img src="/images/logo.png" className=" h-10 p-2"alt="My Image" /></a>
+        </li>
         <li>
           <a
             href="/"
@@ -39,6 +42,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      </div>
     </nav>
   );
 };
