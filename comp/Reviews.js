@@ -2,7 +2,6 @@ import React from 'react';
 
 const Reviews = ({ rating, comment }) => {
   return (
-
     <div className="flex justify-center">
       <div className="w-4/5 bg-black bg-opacity-20">
         <p>Name</p>
