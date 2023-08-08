@@ -39,7 +39,7 @@ const Rating = () => {
   };
 
   return (
-    <div className="mt-5 mb-5">
+    <div className="mt-5 mb-5 2xl:container 2xl:mx-auto">
       <h1 className="text-center font-sans font-bold text-orange213 text-2xl">Rate This Page</h1>
       <hr className="border-t-2 border-orange213" />
       <p className="text-center">Please select a rating:</p>
