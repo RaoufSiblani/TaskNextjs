@@ -48,7 +48,7 @@ const Menu = () => {
     <div>
       <Navbar />
       <Banner {...bannerData} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 2xl:container 2xl:mx-auto">
         {menuItems.map((menuItem, index) => (
           <MenuItem
             key={index}
@@ -61,9 +61,9 @@ const Menu = () => {
           />
         ))}
       </div>
-      <div>
+      <div className = "2xl:container 2xl:mx-auto">
         <p className="text-orange213 text-2xl text-left underline font-bold pl-1">Your order:</p>
-      </div>
+      
             {selectedItems.map((item, index) => (
               <Order
                 key={index}
@@ -72,6 +72,7 @@ const Menu = () => {
                 price={item.price}
               />
             ))}
+      </div>
       <Footer />
     </div>
   );

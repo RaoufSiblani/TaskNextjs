@@ -6,8 +6,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black flex items-center ">
-      <div className="2xl:container 2xl:mx-auto mb-10">
-      <ul className="flex items-center justify-center w-full list-none">
+      <div className="2xl:container 2xl:mx-auto">
+      <ul className="flex items-center justify-center w-full list-none my-3">
         <li>
         <a href="/"><img src="/images/logo.png" className=" h-20 py-auto px-3"alt="My Image" /></a>
         </li>
